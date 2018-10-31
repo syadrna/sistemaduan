@@ -1,4 +1,4 @@
-<?php 
+<?php
 $server="localhost"; //alamat pd/ip
 $dbuser= "root";//db username
 $dbpassword="";//password db user
