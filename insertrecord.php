@@ -11,8 +11,17 @@ $tajuk = $_POST['tajuk'];
 $butiran = $_POST['butiran'];
 $lokasi = $_POST['lokasi'];
 
+if(!isset($_SESSION)) {
+		session_start();
+}
+
+// Get user ID from username
+$query = mysqli_query($db, "SELECT id FROM user WHERE username = '".$_SESSION['id']."'");
+$result = mysqli_fetch_assoc($query);
+$user_id = $result['id'];
+
 //insert to sql query
-$sql= "INSERT INTO aduan (nama, tarikh, kategoripelawat, kategoriaduan, tajukaduan, butiranaduan, lokasiaduan) VALUES ('$nama', '$tarikh', '$pengadu', '$kategori','$tajuk', '$butiran', '$lokasi')";
+$sql= "INSERT INTO aduan (user_id, nama, tarikh, kategoripelawat, kategoriaduan, tajukaduan, butiranaduan, lokasiaduan, status) VALUES ('$user_id', '$nama', '$tarikh', '$pengadu', '$kategori','$tajuk', '$butiran', '$lokasi', '')";
 
 //run SQL query- save record to db server
 $rs= mysqli_query($db, $sql);
