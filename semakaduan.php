@@ -2,34 +2,21 @@
     include "connection.php";
     include "header.php";
     include "checksession.php";
-    echo '<pre>';
-    print_r($_SESSION);
-    echo '</pre>';
-    die();
-    if(isset($_GET ['id'])){
-    $searchID= $_GET['id']; 
-    }
 
     //get user id and name
-    $test = $_SESSION["id"];
-    $user = "SELECT nama from user where id= '$test'";
-    $rs2 = mysqli_query($db,$user);
-    $nn = mysqli_fetch_assoc($rs2);
+    $username = $_SESSION['id'];
+    $query = mysqli_query($db, "SELECT id from user where username= '$username'");
+    $result = mysqli_fetch_assoc($query);
+    $user_id = $result['id'];
 
-    echo $nn; 
+    $rs = mysqli_query($db, "SELECT * FROM aduan WHERE user_id = '$user_id'");
 
-$searchID= $_GET['id'];
-
-    $sql="SELECT * FROM aduan WHERE idaduan = '$searchID'";
-    $rs=mysqli_query($db, $sql);
-
-    if($rs==false) { //if sql error
-        echo ("SQL Error : ".mysqli_error($db));
+    if(mysqli_num_rows($rs) <= 0) {
         echo "Rekod tidak dijumpai";
     }
- 
+
     else { //listing record
-        
+
         echo "<p><p>";
         echo "<div class='lapik'>";
         echo "<div class='section-header text-center'>";
@@ -77,6 +64,6 @@ $searchID= $_GET['id'];
 
 ?>
 
-<?php 
+<?php
 include 'footer.php';
 ?>

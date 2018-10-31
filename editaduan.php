@@ -45,7 +45,7 @@ if(isset($_POST['type']) && $_POST['type'] === 'insert') {
                                 border-radius: 4px;
                                 box-sizing: border-box;
                             }
-                            
+
                             input[type=date], select {
                                 width: 100%;
                                 padding: 12px 20px;
@@ -55,8 +55,8 @@ if(isset($_POST['type']) && $_POST['type'] === 'insert') {
                                 border-radius: 4px;
                                 box-sizing: border-box;
                             }
-                            
-                            
+
+
                             input[type=submit] {
                                 width: 100%;
                                 background-color: #85C1E9;
@@ -72,7 +72,7 @@ if(isset($_POST['type']) && $_POST['type'] === 'insert') {
                                    background-color: #85C1E9;
                                }
 
-                           
+
                                </style>
 
 <!--HTML-->
@@ -134,17 +134,17 @@ if(isset($_POST['type']) && $_POST['type'] === 'insert') {
 
     <input type="hidden" name="type" value="insert" />
 
-  
+
     <br><input type="submit" value="Submit">
 
 </form></div>
-        
+
             </div>
             <!-- /Row -->
 
         </div>
         <!-- /Container -->
 
-    <?php 
+    <?php
         include 'footer.php'
      ?>

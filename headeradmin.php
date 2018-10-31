@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include 'connection.php';
  ?>
 <!DOCTYPE html>
@@ -44,7 +44,7 @@
                 <a href="semakaduan.php" class="nav-links">SEMAK ADUAN</a>
             </li>
             <li>
-                <a href="logkeluar.php" class="nav-links">LOG KELUAR</a>
+                <a href="logout.php" class="nav-links">LOG KELUAR</a>
             </li>
         </ul>
 
@@ -65,13 +65,9 @@
       </div>
     </div>
 
-	
+
 
           <div class="container">
 		     <div class="row">
              <div class="col-sm-12" align="center">
           </div>
-
- 
-    
-						

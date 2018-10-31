@@ -21,7 +21,7 @@ $result = mysqli_fetch_assoc($query);
 $user_id = $result['id'];
 
 //insert to sql query
-$sql= "INSERT INTO aduan (user_id, nama, tarikh, kategoripelawat, kategoriaduan, tajukaduan, butiranaduan, lokasiaduan, status) VALUES ('$user_id', '$nama', '$tarikh', '$pengadu', '$kategori','$tajuk', '$butiran', '$lokasi', '')";
+$sql= "INSERT INTO aduan (user_id, nama, tarikh, kategoripelawat, kategoriaduan, tajukaduan, butiranaduan, lokasiaduan, status) VALUES ('$user_id', '$nama', '$tarikh', '$pengadu', '$kategori','$tajuk', '$butiran', '$lokasi', 'Dalam Proses')";
 
 //run SQL query- save record to db server
 $rs= mysqli_query($db, $sql);
