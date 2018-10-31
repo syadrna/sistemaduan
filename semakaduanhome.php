@@ -1,5 +1,4 @@
 <?php
-	// Test changessdjsakljdlksajdklsajdlksajlkdj
 	include "connection.php";
 	include "header.php";
 ?>
