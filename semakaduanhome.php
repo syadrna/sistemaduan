@@ -1,4 +1,5 @@
-<?php 
+<?php
+	// Test changes
 	include "connection.php";
 	include "header.php";
 ?>
@@ -20,6 +21,6 @@
 
 </div></div></div>
 
-<?php 
+<?php
 	include "footer.php";
 ?>
