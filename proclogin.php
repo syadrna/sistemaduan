@@ -40,9 +40,13 @@ if ($count == 1 )
 		header ('location: formaduan.php');//page user
 	}
 }
-else 
+else
 {
-	echo '<script type="text/javascript"> alert("Invalid username or password") </script>';
+  // destroy session, pastu buat session baru
+  if(session_destroy()) {
+      session_start();
+      $_SESSION['error_login'] = true;
+  }
 	header('location: login.php');
 }
 
