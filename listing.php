@@ -57,7 +57,7 @@ geoip_db_avail(database)
     echo "</table></div>";
     echo "<br>";
     echo "<center>";
-    echo "<a href='formaduan.php' class='main-btn'>KEMBALI SEMULA</a>\n";
+    echo "<a href='formaduan.php' class='btn btn-info'>KEMBALI SEMULA</a>\n";
     echo "</center>";
     echo "<br>";
 

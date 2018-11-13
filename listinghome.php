@@ -1,3 +1,7 @@
+<?php
+    include "connection.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -86,20 +90,73 @@
       <div class="row">
         <div class="col">
           <div class="section_title_container text-center">
-                <form action="listinghome.php" method="POST">
-                    <h2>SEMAK ADUAN</h2>
-                    <h5> Sila Masukkan No ID Aduan Anda </h5>
-          </div>
-    <input type="text" name="id" class="form-control" placeholder="No ID Aduan Anda.. "><br><p>
-    <center><input type="submit" value="SEMAK" class="btn btn-info"><br></center>
-    <br>
+
+<?php    
+    $searchID= $_POST['id']; 
+
+    $sql="SELECT * FROM aduan WHERE idaduan = '$searchID'";
+    $rs=mysqli_query($db, $sql);
+
+    if($rs==false) { //if sql error
+    	echo ("SQL Error : ".mysqli_error($db));
+        echo "Rekod tidak dijumpai";
+    }
+ 
+    else { //listing record
+        
+        echo "<p><p>";
+        echo "<div class='lapik'>";
+        echo "<div class='section-header text-center'>";
+        echo "<h2 class='title'>ADUAN</h2>";
+        echo "</div>";
+        echo "<table class= 'table table-hover'>";
+        echo "<thead>";
+        echo "<tr align='center'>";
+        echo "<th>ID ADUAN</th>";
+        echo "<th>NAMA</th>";
+        echo "<th>TARIKH</th>";
+        echo "<th>KATEGORI ADUAN</th>";
+        echo "<th>KATEGORI PELAWAT</th>";
+        echo "<th>TAJUK ADUAN</th>";
+        echo "<th>BUTIRAN ADUAN</th>";
+        echo "<th>LOKASI ADUAN</th>";
+        echo "<th> STATUS ADUAN</th>";
+        echo "</tr>";
+        echo "<P><P>";
+    	?>
+
+        <?php
+        while ($record=mysqli_fetch_array($rs)){
+        echo "<tr>";
+        echo "<td>";
+        $x=$record['idaduan'];
+        echo $record['idaduan'];
+        echo "<td>" .$record["nama"]."</td>";
+        echo "<td>" .$record["tarikh"]."</td>";
+        echo "<td>" .$record["kategoriaduan"]."</td>";
+        echo "<td>" .$record["kategoripelawat"]."</td>";
+        echo "<td>" .$record["tajukaduan"]."</td>";
+        echo "<td>" .$record["butiranaduan"]."</td>";
+        echo "<td>" .$record["lokasiaduan"]."</td>";
+        echo "<td>" .$record["status"]."</td>";
+        echo "</tr>";
+        }
+
+    }//end while
+    echo "</table></div>";
+    echo "<br>";
+    echo "<center>";
+    echo "<a href='mainpage.php' class='btn btn-info'>KEMBALI SEMULA</a>\n";
+    echo "</center>";
+    echo "<br>";
+
+?>
 
 </form>
 </div></div></div></div>
 
 
-
-  <footer id="footer" class="sm-padding bg-dark">
+<footer id="footer" class="sm-padding bg-dark">
 
     <!-- Container -->
     <div class="container">

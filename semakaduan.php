@@ -1,7 +1,6 @@
 <?php
     include "connection.php";
-    include "header.php";
-    include "checksession.php";
+    include "headersemak.php";
 
     //get user id and name
     $username = $_SESSION['id'];

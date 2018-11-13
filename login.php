@@ -40,7 +40,7 @@
         </div>
     </form>
 
-    <center><p>Tiada akaun? Sila <a href="register.php">Register</a></p></center>
+    <center><p>Tiada akaun? Sila <a href="register.php">Register</a> atau <a href="mainpage.php">Kembali</a></p></center>
     <?php
     if(!isset($_SESSION)) {
         session_start();

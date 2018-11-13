@@ -17,9 +17,7 @@ $sql="DELETE FROM aduan WHERE idaduan ='$id'";
 $rs=mysqli_query($db, $sql); 
 
 //feedback operation
-if ($rs=true){
-	echo "Rekod telah dipadam, ID $id";
-}
+
 
 ?>
 

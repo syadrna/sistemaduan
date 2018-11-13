@@ -83,7 +83,6 @@
 
 	<!-- Home -->
 
-<div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -94,11 +93,11 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="img/kvsa.jpg" alt="KVSA" width="150%" height="80%">
+        <img src="img/kvsa.jpg" alt="KVSA">
       </div>
 
       <div class="item">
-        <img src="img/kvsa1.jpg" alt="KVSA" width="150%" height="80%">
+        <img src="img/kvsa1.jpg" alt="KVSA">
       </div>
     
     <!-- Left and right controls -->
@@ -111,7 +110,7 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div></div></div>
+</div></div>
 			
 	<!-- Pricing -->
 
@@ -121,7 +120,7 @@
 				<div class="col">
 					<div class="section_title_container text-center">
 						<div class="section_title"><b><h1>SISTEM ADUAN DAN MAKLUMBALAS</h1></b></div>
-						<div class="section_subtitle">Selamat Datang ke Sistem Aduan dan Maklumbalas yang telah dibangunkan khusus bagi membolehkan pengguna membuat aduan tentang perkara-perkara berkaitan perkhidmatan, pentadbiran, pembelajaran dan masalah hal ehwal pembelajaran di Kolej Vokasional Shah Alam.</div>
+						<div class="section_subtitle"><h4>Selamat Datang ke Sistem Aduan dan Maklumbalas yang telah dibangunkan khusus bagi membolehkan pengguna membuat aduan tentang perkara-perkara berkaitan perkhidmatan, pentadbiran, pembelajaran dan masalah hal ehwal pembelajaran di Kolej Vokasional Shah Alam.</h4></div>
 					</div>
 				</div>
 			</div>

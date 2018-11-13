@@ -44,7 +44,7 @@ $id = $_GET['id'];
 
  <label for="pelawat">STATUS ADUAN</label>
     <select id="pelawat" name="pengadu">
-      <option value="Status Aduan"> Status Aduan </option>
+      <option value="Status Aduan" readonly required> Status Aduan </option>
       <option value="Dalam Proses">Sedang diproses</option>
       <option value="Tindakan Diambil">Tindakan sudah diambil</option><br>
     </select>

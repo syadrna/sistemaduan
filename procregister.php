@@ -7,7 +7,7 @@ include('link_db.php');
 $id = $_POST['id'];
 $noic=$_POST['noic'];
 $psw = $_POST['psw'];
-$name = $_POST['name'];
+$name = $_POST['nama'];
 $type = 2;
 
 /*Query*/
@@ -17,7 +17,7 @@ $row = mysqli_query($con,$query);
 $count = mysqli_num_rows($row);
 $show = mysqli_fetch_assoc($row);
 
-if(mysqli_num_rows($row)>1){
+if(mysqli_num_rows($row)){
 	echo "<script>
 	alert ('Username used');
 	window.location.href='http://localhost/sistemaduan/register.php';

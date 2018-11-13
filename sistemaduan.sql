@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Oct 31, 2018 at 03:09 PM
--- Server version: 10.3.10-MariaDB
--- PHP Version: 7.2.10
+-- Host: 127.0.0.1
+-- Generation Time: Nov 13, 2018 at 02:09 PM
+-- Server version: 10.1.30-MariaDB
+-- PHP Version: 7.2.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -61,6 +61,13 @@ CREATE TABLE `aduan` (
   `status` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `aduan`
+--
+
+INSERT INTO `aduan` (`idaduan`, `user_id`, `kategoriaduan`, `tajukaduan`, `butiranaduan`, `lokasiaduan`, `nama`, `kategoripelawat`, `tarikh`, `status`) VALUES
+(1, 11, 'Pentadbiran Kolej', 'bkjbkj', '            hhhhhhh    ', '            KVSA    ', 'farid', 'Pelawat', '2018-11-13', 'Dalam Proses');
+
 -- --------------------------------------------------------
 
 --
@@ -84,7 +91,8 @@ INSERT INTO `user` (`id`, `noic`, `nama`, `username`, `pass`, `Type`) VALUES
 (1, '991124106000', 'ELISYA ADRIANA BINTI AHMAD JAMIL', 'admin', '1234', 1),
 (3, '991113035331', 'Ammar Azahar', 'zoork', 'ammar', 2),
 (5, '991215105338', 'Siti Nur Amira', 'mirazail', 'amira123', 2),
-(6, '200311034565', 'Siti Nabilah', 'belle', 'belle', 2);
+(6, '200311034565', 'Siti Nabilah', 'belle', 'belle', 2),
+(11, '990723106083', 'farid', 'fls', 'fls', 2);
 
 --
 -- Indexes for dumped tables
@@ -123,13 +131,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `aduan`
 --
 ALTER TABLE `aduan`
-  MODIFY `idaduan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idaduan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Constraints for dumped tables

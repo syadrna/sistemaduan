@@ -1,5 +1,6 @@
 <?php
 	include 'connection.php';
+	include 'checksession.php';
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,34 +39,16 @@
         <img class="logo" src="img/logokvsa.png" alt="logo" width="110" height="80">
         <ul class="main-nav" id="js-menu">
             <li>
-                <a href="formaduan.php" class="nav-links">DAFTAR ADUAN</a>
-            </li>
-            <li>
-                <a href="semakaduan.php" class="nav-links">SEMAK ADUAN</a>
-            </li>
-            <li>
                 <a href="logout.php" class="nav-links">LOG KELUAR</a>
             </li>
         </ul>
 
-        <div class="phone">
-					<div>03-5191 6326</div>
-				</div>
+     
 </nav>
 
 
 
 </div></div>
-
-<div class= "jumbotron jumbotron-fluid" style="padding-top: 20px; padding-bottom: 5px;">
-      <div class="container">
-        <center>
-          <p class="lead"> WELCOME</p>
-        </center>
-      </div>
-    </div>
-
-
 
           <div class="container">
 		     <div class="row">

@@ -221,13 +221,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 
 /*------------------------------------*\
-    Logo
-\*------------------------------------*/
-
-
-
-
-/*------------------------------------*\
     Navigation
 \*------------------------------------*/
 
@@ -263,33 +256,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     .logo:hover,
     .nav-links:hover {
-        color: rgba(255, 255, 255, 1);
-    }
 
-.phone
-{
-    height: 45px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top:15px;
-    border-radius: 22px;
-    background: linear-gradient(to right, #487fee, #b632fa);
-}
-.phone > div
-{
-    font-size: 14px;
-    font-weight: 500;
-    color: #FFFFFF;
-    white-space: nowrap;
-}
-.phone i
-{
-    display: block;
-    color: #FFFFFF;
-    font-size: 24px;
-    margin-right: 7px;
-}
-
+        
 /*------------------------------------*\
     Header
 \*------------------------------------*/

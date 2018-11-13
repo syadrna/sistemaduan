@@ -1,36 +1,6 @@
 @charset "utf-8";
-/* CSS Document */
-
-/******************************
-
-[Table of Contents]
-
-1. Fonts
-2. Body and some general stuff
-3. Header
-4. Menu
-5. Home
-6. Domain Pricing
-7. Why Choose Us
-8. Pricing
-9. Content Right
-10. Content Left
-11. Footer
-
-
-******************************/
-
-/***********
-1. Fonts
-***********/
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
 
-/*********************************
-2. Body and some general stuff
-*********************************/
-
-*
 {
 	margin: 0;
 	padding: 0;
@@ -270,10 +240,13 @@ section
 }
 .button
 {
-	width: 193px;
-	height: 72px;
-	border-radius: 36px;
-	overflow: hidden;
+	background-color: #85C1E9;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 .button::before
 {
@@ -315,9 +288,36 @@ section
 	z-index: 1;
 }
 
+.section-header {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.section-header .title {
+    text-transform: capitalize;
+}
+
+.title:after {
+    content:"";
+    display:block;
+    height:4px;
+    width:40px;
+    background-color: #6195FF;
+    margin-top: 20px;
+}
+
+.text-center .title:after {
+    margin: 20px auto 0px;
+}
+
+
 /*********************************
 3. Header
 *********************************/
+.carousel-inner > .item {
+   height: 500px;
+   width: 500%;
+}
 
 .header
 {

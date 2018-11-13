@@ -1,9 +1,13 @@
 <?php 
   include "connection.php";
   include "header.php";
-  if(!isset($_SESSION)) {
-      session_start();
-  }
+//      include "checksession.php";
+
+$id= $_SESSION["id"];
+  $query = "SELECT * FROM user WHERE username = '$id'";
+$row = mysqli_query($db,$query);
+$count = mysqli_num_rows($row);
+$show = mysqli_fetch_assoc($row);
 
   ?>
 
